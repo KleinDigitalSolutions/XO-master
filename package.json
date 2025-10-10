@@ -1,0 +1,25 @@
+{
+  "name": "music-ai-separator",
+  "version": "1.0.0",
+  "description": "Klein Digital Solutions - Music AI Separator with Stripe Subscriptions",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static build - no build process needed'",
+    "start": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["music", "ai", "separator", "demucs", "modal", "klein-digital", "stripe", "subscriptions"],
+  "author": "Klein Digital Solutions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kleindigitalsolutions/music-ai-separator"
+  },
+  "dependencies": {
+    "stripe": "^14.25.0"
+  },
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

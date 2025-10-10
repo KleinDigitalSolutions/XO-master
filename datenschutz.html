@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - Klein Digital Solutions AI Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container { 
+            background: white; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        h1, h2, h3 { color: #667eea; }
+        .back-btn {
+            background: #667eea;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            background: #5a6fd8;
+            color: white;
+            text-decoration: none;
+        }
+        .section { margin-bottom: 2rem; }
+        .highlight { background-color: #f8f9ff; padding: 1rem; border-radius: 8px; border-left: 4px solid #667eea; }
+        .privacy-card { background: #f8f9ff; border: 1px solid #e9ecef; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+        .data-flow { background: linear-gradient(45deg, #f8f9ff, #ffffff); border-radius: 8px; padding: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="p-5">
+            <div class="mb-4">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i>Zurück zum AI Studio
+                </a>
+            </div>
+            
+            <h1 class="mb-4">
+                <i class="fas fa-shield-alt me-3"></i>Datenschutzerklärung
+            </h1>
+            <p class="text-muted mb-4"><strong>Klein Digital Solutions AI Studio</strong> - Stand: Januar 2025</p>
+
+            <div class="section">
+                <h2>1. Verantwortlicher</h2>
+                <div class="privacy-card">
+                    <strong>Klein Digital Solutions AI Studio</strong><br>
+                    Özgür Azap<br>
+                    Wittbräuckerstraße 109<br>
+                    44287 Dortmund<br>
+                    Deutschland<br><br>
+                    <i class="fas fa-envelope me-2"></i>E-Mail: info@kleindigitalsolutions.de<br>
+                    <i class="fas fa-globe me-2"></i>Website: https://studio.kleindigitalsolutions.de
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. Allgemeine Hinweise zur Datenverarbeitung</h2>
+                <p>Der Schutz Ihrer persönlichen Daten ist uns besonders wichtig. Wir verarbeiten personenbezogene Daten nur auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG). Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung personenbezogener Daten in unserem KI-Audio-Service.</p>
+                
+                <div class="highlight">
+                    <h4><i class="fas fa-robot me-2"></i>KI und Datenschutz</h4>
+                    <p><strong>Wichtig:</strong> Unsere KI-Services entsprechen der EU-KI-Verordnung und DSGVO-Anforderungen. Alle KI-Verarbeitungen erfolgen unter strikten Datenschutzbestimmungen.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. Datenverarbeitung bei der Nutzung unserer Website</h2>
+                
+                <h3>3.1 Server-Log-Dateien (Vercel/Supabase)</h3>
+                <div class="privacy-card">
+                    <p><strong>Daten:</strong> IP-Adresse, Browser-Information, Betriebssystem, Referrer-URL, Zeitpunkt des Zugriffs</p>
+                    <p><strong>Zweck:</strong> Technische Bereitstellung der Website, Sicherheit, Fehleranalyse</p>
+                    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</p>
+                    <p><strong>Speicherdauer:</strong> 7 Tage (automatische Löschung)</p>
+                    <p><strong>Drittanbieter:</strong> Vercel Inc. (USA), Supabase Inc. (USA) - beide mit Angemessenheitsbeschluss</p>
+                </div>
+
+                <h3>3.2 Cookies und lokaler Speicher</h3>
+                <div class="privacy-card">
+                    <p><strong>Essenzielle Cookies:</strong></p>
+                    <ul>
+                        <li>Session-Management (Login-Status)</li>
+                        <li>Sicherheits-Token (CSRF-Schutz)</li>
+                        <li>Benutzereinstellungen</li>
+                    </ul>
+                    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO</p>
+                    <p><strong>Speicherdauer:</strong> Session-Ende oder 30 Tage</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>4. Benutzerregistrierung und Account-Verwaltung</h2>
+                
+                <h3>4.1 Registrierungsdaten (Supabase)</h3>
+                <div class="data-flow">
+                    <h5><i class="fas fa-user-plus me-2"></i>Verarbeitete Daten:</h5>
+                    <ul>
+                        <li><strong>Pflichtdaten:</strong> E-Mail-Adresse, Passwort (gehashed)</li>
+                        <li><strong>Optionale Daten:</strong> Name, Firmenname</li>
+                        <li><strong>Automatisch:</strong> Registrierungsdatum, Nutzer-ID, Login-Zeiten</li>
+                    </ul>
+                    
+                    <p><strong>Zweck:</strong> Account-Verwaltung, Authentifizierung, Service-Bereitstellung</p>
+                    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</p>
+                    <p><strong>Speicherdauer:</strong> Bis zur Account-Löschung</p>
+                </div>
+
+                <h3>4.2 Nutzungsstatistiken</h3>
+                <div class="privacy-card">
+                    <p><strong>Daten:</strong> Anzahl verarbeiteter Dateien, genutzte Services, Timestamp</p>
+                    <p><strong>Zweck:</strong> Paywall-Management, Service-Optimierung, Abrechnung</p>
+                    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>5. KI-Audio-Verarbeitung - Kern unseres Services</h2>
+                
+                <div class="highlight">
+                    <h3><i class="fas fa-music me-2"></i>Audio-Datenverarbeitung</h3>
+                    
+                    <h4>5.1 Hochgeladene Audiodateien</h4>
+                    <div class="data-flow">
+                        <p><strong>Verarbeitungsablauf:</strong></p>
+                        <ol>
+                            <li><strong>Upload:</strong> Temporäre Speicherung auf sicheren Servern</li>
+                            <li><strong>KI-Verarbeitung:</strong> Automatisierte Analyse durch unsere KI-Modelle</li>
+                            <li><strong>Ergebnis-Bereitstellung:</strong> Verarbeitete Dateien zum Download</li>
+                            <li><strong>Automatische Löschung:</strong> Alle Dateien nach 24 Stunden</li>
+                        </ol>
+                        
+                        <p><strong>Daten:</strong> Rohe Audiodateien, Metadaten, verarbeitete Ergebnisse</p>
+                        <p><strong>Zweck:</strong> KI-gestützte Audio-Bearbeitung (Stem Separation, Mastering, Transkription, Speech Enhancement)</p>
+                        <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</p>
+                        <p><strong>Speicherdauer:</strong> Maximal 24 Stunden (automatische Löschung)</p>
+                    </div>
+
+                    <h4>5.2 KI-Modell Training</h4>
+                    <div class="privacy-card">
+                        <p><strong><i class="fas fa-shield-alt me-2"></i>Garantie:</strong> Ihre Audiodateien werden NIEMALS zum Training unserer KI-Modelle verwendet. Jede Verarbeitung erfolgt isoliert und ausschließlich für Ihren Service-Request.</p>
+                    </div>
+
+                    <h4>5.3 Technische Sicherheitsmaßnahmen</h4>
+                    <ul>
+                        <li><strong>Verschlüsselung:</strong> HTTPS/TLS für alle Datenübertragungen</li>
+                        <li><strong>Isolierte Verarbeitung:</strong> Jede Datei wird separat verarbeitet</li>
+                        <li><strong>Sichere Löschung:</strong> Überschreibung der Speicherbereiche</li>
+                        <li><strong>Zugriffskontrolle:</strong> Nur autorisierte Systeme haben Zugriff</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>6. Zahlungsabwicklung (Stripe)</h2>
+                
+                <h3>6.1 Stripe-Integration</h3>
+                <div class="privacy-card">
+                    <p><strong>Verarbeitete Daten bei Stripe:</strong></p>
+                    <ul>
+                        <li>E-Mail-Adresse (für Customer Portal)</li>
+                        <li>Zahlungsinformationen (Kreditkarte, etc.)</li>
+                        <li>Rechnungsdaten und Transaktionshistorie</li>
+                        <li>Abonnement-Status</li>
+                    </ul>
+                    
+                    <p><strong>Zweck:</strong> Zahlungsabwicklung, Abonnement-Management, Rechnungsstellung</p>
+                    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</p>
+                    <p><strong>Datenschutz:</strong> <a href="https://stripe.com/privacy" target="_blank">Stripe Privacy Policy</a></p>
+                    <p><strong>Standort:</strong> USA mit Angemessenheitsbeschluss</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>7. Drittanbieter und internationale Übermittlungen</h2>
+                
+                <h3>7.1 Eingesetzte Drittdienste</h3>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="privacy-card">
+                            <h5><i class="fas fa-server me-2"></i>Supabase (USA)</h5>
+                            <p><strong>Zweck:</strong> Benutzer-Authentifizierung, Datenbank</p>
+                            <p><strong>Daten:</strong> Account-Daten, Nutzungsstatistiken</p>
+                            <p><strong>Schutz:</strong> SOC 2, ISO 27001</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="privacy-card">
+                            <h5><i class="fas fa-cloud me-2"></i>Vercel (USA)</h5>
+                            <p><strong>Zweck:</strong> Website-Hosting, CDN</p>
+                            <p><strong>Daten:</strong> Log-Dateien, Performance-Daten</p>
+                            <p><strong>Schutz:</strong> SOC 2, Angemessenheitsbeschluss</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>7.2 KI-Verarbeitungsserver</h3>
+                <div class="highlight">
+                    <p><strong>Standort:</strong> EU-basierte Server für KI-Audio-Verarbeitung</p>
+                    <p><strong>Schutz:</strong> Keine Übermittlung von Audiodateien außerhalb der EU</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>8. Ihre Datenschutz-Rechte</h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="privacy-card">
+                            <h5><i class="fas fa-info-circle me-2"></i>Auskunftsrecht</h5>
+                            <p>Sie haben das Recht auf Auskunft über die Sie betreffenden personenbezogenen Daten (Art. 15 DSGVO).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="privacy-card">
+                            <h5><i class="fas fa-edit me-2"></i>Berichtigung</h5>
+                            <p>Sie haben das Recht auf Berichtigung unrichtiger Daten (Art. 16 DSGVO).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="privacy-card">
+                            <h5><i class="fas fa-trash-alt me-2"></i>Löschung</h5>
+                            <p>Sie haben das Recht auf Löschung Ihrer Daten ("Recht auf Vergessenwerden", Art. 17 DSGVO).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="privacy-card">
+                            <h5><i class="fas fa-download me-2"></i>Datenportabilität</h5>
+                            <p>Sie haben das Recht auf Datenübertragbarkeit (Art. 20 DSGVO).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <h4><i class="fas fa-user-cog me-2"></i>Ausübung Ihrer Rechte</h4>
+                    <p>Für die Ausübung Ihrer Datenschutzrechte wenden Sie sich bitte an:</p>
+                    <p><strong>E-Mail:</strong> info@kleindigitalsolutions.de<br>
+                    <strong>Betreff:</strong> "Datenschutzanfrage - AI Studio"</p>
+                    
+                    <p><strong>Account-Löschung:</strong> Sie können Ihren Account jederzeit über das Dashboard löschen oder per E-Mail beantragen.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>9. Beschwerde bei der Aufsichtsbehörde</h2>
+                <div class="privacy-card">
+                    <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über unsere Verarbeitung personenbezogener Daten zu beschweren.</p>
+                    
+                    <p><strong>Zuständige Aufsichtsbehörde:</strong><br>
+                    Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen<br>
+                    Kavalleriestraße 2-4<br>
+                    40213 Düsseldorf<br>
+                    <a href="https://www.ldi.nrw.de" target="_blank">www.ldi.nrw.de</a></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>10. Änderungen der Datenschutzerklärung</h2>
+                <p>Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, um sie stets den aktuellen rechtlichen Anforderungen anzupassen oder um Änderungen unserer Services zu berücksichtigen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+                
+                <div class="highlight">
+                    <p><strong>Benachrichtigung bei wesentlichen Änderungen:</strong> Wir informieren Sie per E-Mail über wesentliche Änderungen an dieser Datenschutzerklärung mindestens 14 Tage vor Inkrafttreten.</p>
+                </div>
+            </div>
+
+            <div class="section bg-light p-4 rounded">
+                <h3><i class="fas fa-envelope me-2"></i>Datenschutz-Kontakt</h3>
+                <p><strong>Bei Fragen zum Datenschutz:</strong></p>
+                <p>
+                    <i class="fas fa-envelope me-2"></i>E-Mail: info@kleindigitalsolutions.de<br>
+                    <i class="fas fa-phone me-2"></i>Betreff: "Datenschutzanfrage - AI Studio"<br>
+                    <i class="fas fa-clock me-2"></i>Antwortzeit: Binnen 48 Stunden
+                </p>
+            </div>
+
+            <div class="text-center mt-4">
+                <small class="text-muted">
+                    © 2025 Klein Digital Solutions AI Studio - Datenschutzerklärung<br>
+                    <a href="impressum.html">Impressum</a> | <a href="agb.html">AGB</a> | <a href="index.html">AI Studio</a>
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

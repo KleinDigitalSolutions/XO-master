@@ -1,0 +1,12 @@
+demucs-main/
+spleeter-master/
+server.log
+*.py
+*.m4a
+*.wav
+*.mp3
+*.tar.gz
+modal_*.py
+deploy_modal.sh
+FINAL_STRUCTURE.md
+README.md
