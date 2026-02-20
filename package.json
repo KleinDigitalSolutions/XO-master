@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kleindigitalsolutions/music-ai-separator"
+    "url": "https://github.com/KleinDigitalSolutions/XO-master"
   },
   "dependencies": {
     "stripe": "^14.25.0"

@@ -4,6 +4,13 @@
  * Vercel Serverless Function with comprehensive payment processing
  */
 
+function getStripeClient() {
+    if (!process.env.STRIPE_SECRET_KEY) {
+        throw new Error('Stripe secret key is not configured');
+    }
+    return require('stripe')(process.env.STRIPE_SECRET_KEY);
+}
+
 // Handle CORS and preflight requests
 module.exports = async function handler(req, res) {
     // Set CORS headers for both domains
@@ -44,7 +51,7 @@ module.exports = async function handler(req, res) {
         });
     }
 
-    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+    const stripe = getStripeClient();
     const sig = req.headers['stripe-signature'];
     const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
     
@@ -94,6 +101,7 @@ module.exports = async function handler(req, res) {
 }
 
 async function handleCheckoutCompleted(session) {
+    const stripe = getStripeClient();
     console.log('✅ Checkout completed:', session.id);
     
     const customer = await stripe.customers.retrieve(session.customer);
@@ -107,7 +115,7 @@ async function handleCheckoutCompleted(session) {
 }
 
 async function handleSubscriptionPurchase(session, customer) {
-    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+    const stripe = getStripeClient();
     const subscription = await stripe.subscriptions.retrieve(session.subscription);
     
     console.log(`🎉 New subscription: ${subscription.id} for customer: ${customer.email}`);
@@ -228,6 +236,7 @@ async function allocateCredits(creditData) {
 }
 
 async function handlePaymentSucceeded(invoice) {
+    const stripe = getStripeClient();
     console.log('💰 Payment succeeded:', invoice.id);
     
     if (invoice.subscription) {
@@ -241,6 +250,7 @@ async function handlePaymentSucceeded(invoice) {
 }
 
 async function handlePaymentFailed(invoice) {
+    const stripe = getStripeClient();
     console.log('❌ Payment failed:', invoice.id);
     
     if (invoice.subscription) {

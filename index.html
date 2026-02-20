@@ -5905,6 +5905,7 @@ let lastModelUsed = null;
         
         // Global variables
         let stripe = null;
+        const STRIPE_PUBLISHABLE_KEY = window.STRIPE_PUBLISHABLE_KEY || 'pk_test_replace_me';
         let userCredits = 0;
         let userUsageCount = parseInt(localStorage.getItem('klein_usage_count') || '0');
         const FREE_LIMIT = 3; // 3 free uses before requiring credits
@@ -6329,13 +6330,17 @@ let lastModelUsed = null;
             let retryCount = 0;
             const maxRetries = 5;
             
-            while (retryCount < maxRetries && !stripe) {
-                try {
-                    if (typeof Stripe !== 'undefined') {
-                        stripe = Stripe('pk_live_51Rc287AmspxoSxsTV4vIhl3ztXtsqaWuSWgSRXsTpB1AbF4HxEH56lYPetVV8buOdJPDyvzO4vsuZuByRTuErp9100SZc7Snim');
-                        console.log('✅ Stripe initialized successfully');
-                        return true;
-                    }
+                while (retryCount < maxRetries && !stripe) {
+                    try {
+                        if (typeof Stripe !== 'undefined') {
+                            if (STRIPE_PUBLISHABLE_KEY.includes('replace_me')) {
+                                console.error('❌ Stripe publishable key not configured. Set window.STRIPE_PUBLISHABLE_KEY.');
+                                return false;
+                            }
+                            stripe = Stripe(STRIPE_PUBLISHABLE_KEY);
+                            console.log('✅ Stripe initialized successfully');
+                            return true;
+                        }
                 } catch (error) {
                     console.error('❌ Stripe initialization failed:', error);
                 }
@@ -7175,7 +7180,11 @@ let lastModelUsed = null;
             function initializeStripe() {
                 if (typeof Stripe !== 'undefined') {
                     try {
-                        stripe = Stripe('pk_live_51Rc287AmspxoSxsTV4vIhl3ztXtsqaWuSWgSRXsTpB1AbF4HxEH56lYPetVV8buOdJPDyvzO4vsuZuByRTuErp9100SZc7Snim');
+                        if (STRIPE_PUBLISHABLE_KEY.includes('replace_me')) {
+                            console.error('❌ Stripe publishable key not configured. Set window.STRIPE_PUBLISHABLE_KEY.');
+                            return false;
+                        }
+                        stripe = Stripe(STRIPE_PUBLISHABLE_KEY);
                         console.log('✅ Stripe initialized successfully');
                         return true;
                     } catch (error) {

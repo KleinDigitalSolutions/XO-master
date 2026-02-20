@@ -70,8 +70,8 @@ brew install postgresql  # macOS
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/kleindigitalsolutions/music369.git
-cd music369
+git clone https://github.com/KleinDigitalSolutions/XO-master.git
+cd XO-master
 
 # 2. Install dependencies
 npm install
@@ -100,10 +100,10 @@ npm run dev
 
 ```bash
 # Clone the repository
-git clone https://github.com/kleindigitalsolutions/music369.git
+git clone https://github.com/KleinDigitalSolutions/XO-master.git
 
 # Navigate to project directory
-cd music369
+cd XO-master
 
 # Verify files
 ls -la
@@ -111,7 +111,7 @@ ls -la
 
 Expected files:
 ```
-music369/
+XO-master/
 ├── index.html
 ├── package.json
 ├── vercel.json
@@ -165,7 +165,7 @@ From your Supabase project dashboard:
 
 ```bash
 # Navigate to project directory
-cd music369
+cd XO-master
 
 # Run schema SQL file
 psql -h db.xxx.supabase.co -U postgres -d postgres -f supabase_credit_schema.sql
@@ -665,7 +665,7 @@ torch.cuda.empty_cache()
 
 If you encounter issues not covered here:
 
-1. Check [GitHub Issues](https://github.com/kleindigitalsolutions/music369/issues)
+1. Check [GitHub Issues](https://github.com/KleinDigitalSolutions/XO-master/issues)
 2. Review Modal Logs: `modal logs <app-name>`
 3. Review Vercel Logs: `vercel logs`
 4. Check Supabase Logs in dashboard

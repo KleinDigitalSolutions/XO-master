@@ -142,11 +142,11 @@ Musicians often need to process entire albums (10-15 tracks). Currently, they mu
 
 ```bash
 # Fork on GitHub, then clone your fork
-git clone https://github.com/YOUR_USERNAME/music369.git
-cd music369
+git clone https://github.com/<your-username>/XO-master.git
+cd XO-master
 
 # Add upstream remote
-git remote add upstream https://github.com/kleindigitalsolutions/music369.git
+git remote add upstream https://github.com/KleinDigitalSolutions/XO-master.git
 ```
 
 ### 2. Create a Branch
@@ -246,7 +246,7 @@ git push origin feature/your-feature-name
 
 ### 7. Create Pull Request
 
-1. Go to [github.com/kleindigitalsolutions/music369](https://github.com/kleindigitalsolutions/music369)
+1. Go to [github.com/KleinDigitalSolutions/XO-master](https://github.com/KleinDigitalSolutions/XO-master)
 2. Click "Pull Requests" → "New Pull Request"
 3. Select your fork and branch
 4. Fill in the PR template (see below)

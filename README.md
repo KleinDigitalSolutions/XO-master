@@ -10,7 +10,7 @@
 [![Modal](https://img.shields.io/badge/Powered_by-Modal_A10G_GPU-FF6B6B?style=for-the-badge)](https://modal.com)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
 
-**[🚀 Live Demo](https://studio.kleindigitalsolutions.de) | [📚 Documentation](./docs) | [🐛 Report Bug](https://github.com/kleindigitalsolutions/music369/issues)**
+**[🚀 Live Demo](https://studio.kleindigitalsolutions.de) | [📚 Documentation](./docs) | [🐛 Report Bug](https://github.com/KleinDigitalSolutions/XO-master/issues)**
 
 </div>
 
@@ -113,8 +113,8 @@ madmom + essentia          # Music analysis
 
 ```bash
 # Clone the repository
-git clone https://github.com/kleindigitalsolutions/music369.git
-cd music369
+git clone https://github.com/KleinDigitalSolutions/XO-master.git
+cd XO-master
 
 # Install dependencies
 npm install
@@ -154,7 +154,8 @@ Create a `.env` file with:
 
 ```bash
 # Stripe
-STRIPE_SECRET_KEY=sk_live_...
+STRIPE_SECRET_KEY=sk_test_xxx
+STRIPE_PUBLISHABLE_KEY=pk_test_xxx
 STRIPE_WEBHOOK_SECRET=whsec_...
 
 # Supabase
@@ -172,7 +173,9 @@ CREDIT_WEBHOOK_SECRET=your_secure_webhook_secret
 psql -h db.xxx.supabase.co -U postgres -d postgres -f supabase_credit_schema.sql
 ```
 
-See [SETUP.md](./SETUP.md) for detailed setup instructions.
+Note: the frontend expects `window.STRIPE_PUBLISHABLE_KEY` at runtime for direct Stripe redirects.
+
+See [SETUP.md](./docs/SETUP.md) for detailed setup instructions.
 
 ---
 
@@ -283,7 +286,7 @@ CREATE POLICY "Service role can manage users" ON credit_users
 ## 📁 Project Structure
 
 ```
-music369/
+XO-master/
 ├── index.html                          # Main SPA (360KB comprehensive app)
 ├── api/
 │   ├── credits.js                      # Credit management API
@@ -382,15 +385,6 @@ This project is licensed under the MIT License - see [LICENSE](./LICENSE) file f
 
 ---
 
-## 📧 Contact
-
-**Özgür Azap**
-
-- Website: [kleindigitalsolutions.de](https://kleindigitalsolutions.de)
-- GitHub: [@ozgurazap](https://github.com/ozgurazap)
-- Project Link: [https://github.com/kleindigitalsolutions/music369](https://github.com/kleindigitalsolutions/music369)
-
----
 
 <div align="center">
 
@@ -398,6 +392,6 @@ This project is licensed under the MIT License - see [LICENSE](./LICENSE) file f
 
 *This project demonstrates full-stack development, ML deployment, payment systems, and serverless architecture*
 
-[![GitHub stars](https://img.shields.io/github/stars/kleindigitalsolutions/music369?style=social)](https://github.com/kleindigitalsolutions/music369)
+
 
 </div>
