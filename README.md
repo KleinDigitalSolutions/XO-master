@@ -6,7 +6,6 @@
 
 **Professional AI-powered music services with state-of-the-art neural networks**
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-studio.kleindigitalsolutions.de-4A90E2?style=for-the-badge)](https://studio.kleindigitalsolutions.de)
 [![Modal](https://img.shields.io/badge/Powered_by-Modal_A10G_GPU-FF6B6B?style=for-the-badge)](https://modal.com)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
 
