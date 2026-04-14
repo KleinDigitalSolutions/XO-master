@@ -10,7 +10,7 @@
 [![Modal](https://img.shields.io/badge/Powered_by-Modal_A10G_GPU-FF6B6B?style=for-the-badge)](https://modal.com)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
 
-**[🚀 Live Demo](https://studio.kleindigitalsolutions.de) | [📚 Documentation](./docs) | [🐛 Report Bug](https://github.com/KleinDigitalSolutions/XO-master/issues)**
+[📚 Documentation](./docs) | [🐛 Report Bug](https://github.com/KleinDigitalSolutions/XO-master/issues)**
 
 </div>
 
